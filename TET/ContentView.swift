@@ -11,7 +11,7 @@ import SwiftUI
 struct ContentView: View {
     
 //    let urlString: String = "https://transeurotrail.org/wp-content/uploads/gpxsync/PL.gpx"
-    @ObservedObject var currentTrack: TrackModel = TrackModel()
+    @StateObject var currentTrack: TrackModel = TrackModel()
     let formatter = DateFormatter()
     
     init() {
@@ -19,32 +19,38 @@ struct ContentView: View {
         formatter.dateFormat = "dd/MM/yyyy HH:MM"
     }
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-            
-            HStack {
-                Text("Date")
-                Spacer()
-                Text(formatter.string(from: currentTrack.date))
-
+        if currentTrack.isLoading {
+            VStack {
+                ProgressView()
             }
-            HStack {
-                Text("Tracks")
-                Spacer()
-                Text(String(currentTrack.tracks.count))
+        } else {
+            VStack {
+                Image(systemName: "globe")
+                    .imageScale(.large)
+                    .foregroundColor(.accentColor)
+                Text("Hello, world!")
+                
+                HStack {
+                    Text("Date")
+                    Spacer()
+                    Text(formatter.string(from: currentTrack.date))
+                    
+                }
+                HStack {
+                    Text("Tracks")
+                    Spacer()
+                    Text(String(currentTrack.tracks.count))
+                }
+                HStack {
+                    Text("Waypoints")
+                    Spacer()
+                    Text(String(currentTrack.waypoints.count))
+                }
             }
-            HStack {
-                Text("Waypoints")
-                Spacer()
-                Text(String(currentTrack.waypoints.count))
-            }
+            .padding()
         }
-        .padding()
-    
     }
+    
 
     
 }
