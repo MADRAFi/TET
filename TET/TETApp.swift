@@ -11,7 +11,8 @@ import SwiftUI
 struct TETApp: App {
     var body: some Scene {
         WindowGroup {
-            MapView()
+//            MapView()
+            ContentView()
         }
     }
 }

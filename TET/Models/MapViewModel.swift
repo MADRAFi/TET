@@ -23,9 +23,9 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
         override init() {
             super.init()
             locationManager.delegate = self
-//            locationManager?.desiredAccuracy = kCLLocationAccuracyBest
-//            locationManager?.requestWhenInUseAuthorization()
-//            locationManager?.stopUpdatingLocation()
+            locationManager.desiredAccuracy = kCLLocationAccuracyBest
+            locationManager.activityType = .automotiveNavigation
+
         }
     //    func checkLocationServiceIsEnabled() {
     ////        if CLLocationManager.locationServicesEnabled() {
