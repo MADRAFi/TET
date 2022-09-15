@@ -12,7 +12,7 @@ struct TETApp: App {
     var body: some Scene {
         WindowGroup {
 //            MapView()
-            ContentView()
+            CountryListView()
         }
     }
 }

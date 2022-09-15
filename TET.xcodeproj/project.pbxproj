@@ -8,26 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		80A6952628CE4639009FEDCA /* TETApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6952528CE4639009FEDCA /* TETApp.swift */; };
-		80A6952828CE4639009FEDCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6952728CE4639009FEDCA /* ContentView.swift */; };
+		80A6952828CE4639009FEDCA /* CountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6952728CE4639009FEDCA /* CountryView.swift */; };
 		80A6952A28CE463A009FEDCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A6952928CE463A009FEDCA /* Assets.xcassets */; };
 		80A6952D28CE463A009FEDCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80A6952C28CE463A009FEDCA /* Preview Assets.xcassets */; };
 		80A6953428CE46E4009FEDCA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6953328CE46E4009FEDCA /* MapView.swift */; };
 		80A6953B28CE47B6009FEDCA /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6953A28CE47B6009FEDCA /* MapViewModel.swift */; };
 		80D5B97028D12C700028679E /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B96F28D12C700028679E /* TrackModel.swift */; };
 		80D5B97228D2A3E40028679E /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B97128D2A3E40028679E /* Symbols.swift */; };
+		80D5B97528D375810028679E /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B97428D375810028679E /* CountryListView.swift */; };
+		80D5B97828D378750028679E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B97728D378750028679E /* Country.swift */; };
+		80D5B97B28D3A3860028679E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D5B97D28D3A3860028679E /* Localizable.strings */; };
 		80EDE7AE28CEAAF300F790B6 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 80EDE7AD28CEAAF300F790B6 /* CoreGPX */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		80A6952228CE4639009FEDCA /* TET.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TET.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A6952528CE4639009FEDCA /* TETApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TETApp.swift; sourceTree = "<group>"; };
-		80A6952728CE4639009FEDCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		80A6952728CE4639009FEDCA /* CountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryView.swift; sourceTree = "<group>"; };
 		80A6952928CE463A009FEDCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80A6952C28CE463A009FEDCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		80A6953328CE46E4009FEDCA /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		80A6953A28CE47B6009FEDCA /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		80D5B96F28D12C700028679E /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
 		80D5B97128D2A3E40028679E /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
+		80D5B97428D375810028679E /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
+		80D5B97728D378750028679E /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		80D5B97C28D3A3860028679E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; usesTabs = 0; };
+		80D5B97E28D3A3930028679E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +68,13 @@
 		80A6952428CE4639009FEDCA /* TET */ = {
 			isa = PBXGroup;
 			children = (
+				80D5B97628D378520028679E /* Repositories */,
 				80D5B97328D2A4980028679E /* Views */,
 				80A6953928CE47B6009FEDCA /* Models */,
 				80A6952528CE4639009FEDCA /* TETApp.swift */,
 				80A6952928CE463A009FEDCA /* Assets.xcassets */,
 				80A6952B28CE463A009FEDCA /* Preview Content */,
+				80D5B97D28D3A3860028679E /* Localizable.strings */,
 			);
 			path = TET;
 			sourceTree = "<group>";
@@ -81,9 +90,8 @@
 		80A6953928CE47B6009FEDCA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				80A6953A28CE47B6009FEDCA /* MapViewModel.swift */,
-				80D5B96F28D12C700028679E /* TrackModel.swift */,
 				80D5B97128D2A3E40028679E /* Symbols.swift */,
+				80D5B97728D378750028679E /* Country.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -92,9 +100,19 @@
 			isa = PBXGroup;
 			children = (
 				80A6953328CE46E4009FEDCA /* MapView.swift */,
-				80A6952728CE4639009FEDCA /* ContentView.swift */,
+				80A6952728CE4639009FEDCA /* CountryView.swift */,
+				80D5B97428D375810028679E /* CountryListView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		80D5B97628D378520028679E /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				80A6953A28CE47B6009FEDCA /* MapViewModel.swift */,
+				80D5B96F28D12C700028679E /* TrackModel.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +159,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
+				pl,
 			);
 			mainGroup = 80A6951928CE4639009FEDCA;
 			packageReferences = (
@@ -162,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A6952D28CE463A009FEDCA /* Preview Assets.xcassets in Resources */,
+				80D5B97B28D3A3860028679E /* Localizable.strings in Resources */,
 				80A6952A28CE463A009FEDCA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,16 +192,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80A6952828CE4639009FEDCA /* ContentView.swift in Sources */,
+				80A6952828CE4639009FEDCA /* CountryView.swift in Sources */,
 				80A6953428CE46E4009FEDCA /* MapView.swift in Sources */,
 				80A6952628CE4639009FEDCA /* TETApp.swift in Sources */,
 				80D5B97228D2A3E40028679E /* Symbols.swift in Sources */,
+				80D5B97828D378750028679E /* Country.swift in Sources */,
 				80D5B97028D12C700028679E /* TrackModel.swift in Sources */,
+				80D5B97528D375810028679E /* CountryListView.swift in Sources */,
 				80A6953B28CE47B6009FEDCA /* MapViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80D5B97D28D3A3860028679E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D5B97C28D3A3860028679E /* en */,
+				80D5B97E28D3A3930028679E /* pl */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		80A6952E28CE463A009FEDCA /* Debug */ = {

@@ -1,0 +1,43 @@
+/* 
+  Localizable.strings
+  TET
+
+  Created by MADRAFi on 15/09/2022.
+  
+*/
+
+"Available Countries" = "Dostępne Kraje";
+"Albania" = "Albania";
+"Andorra" = "Andora";
+"Austria" = "Austria";
+"Belarus" = "Białoruś";
+"Belgium" = "Belgia";
+"Bosnia and Herzegovina" = "Bośnia i Hercegowina";
+"Bulgaria" = "Bułgaria";
+"Croatia" = "Chorwacja";
+"Denmark" = "Dania";
+"Estonia" = "Estonia";
+"Finland" = "Finlandia";
+"France" = "Francja";
+"Germany" = "Niemcy";
+"Greece" = "Grecja";
+"Hungary" = "Węgry";
+"Italy" = "Włochy";
+"Latvia" = "Łotwa";
+"Lithuania" = "Litwa";
+"Montenegro" = "Czarnogóra";
+"Netherlands" = "Holandia";
+"North Macedonia" = "Macedonia Północna";
+"Norway" = "Norwegia";
+"Poland" = "Polska";
+"Portugal" = "Portugalia";
+"Romania" = "Rumunia";
+"Serbia" = "Serbia";
+"Slovakia" = "Słowacja";
+"Slovenia" = "Słowenia";
+"Spain" = "Hiszpania";
+"Sweden" = "Szwecja";
+"Switzerland" = "Szwajcaria";
+"Turkey" = "Turcja";
+"Ukraine" = "Ukraina";
+"United Kingdom" = "Zjednoczone Królestwo";

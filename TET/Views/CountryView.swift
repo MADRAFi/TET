@@ -8,17 +8,17 @@
 import CoreGPX
 import SwiftUI
 
-struct ContentView: View {
+struct CountryView: View {
     
-//    let urlString: String = "https://transeurotrail.org/wp-content/uploads/gpxsync/PL.gpx"
+    @State var code: String
     @StateObject var currentTrack: TrackModel = TrackModel()
     let formatter = DateFormatter()
     
-    init() {
-        formatter.dateStyle = .short
-        formatter.dateFormat = "dd/MM/yyyy HH:MM"
-    }
-    
+//    init() {
+//        formatter.dateStyle = .short
+//        formatter.dateFormat = "dd/MM/yyyy HH:MM"
+//    }
+//
 //    func getWaypointSymbol(symbol: String) -> Image {
 //        switch symbol {
 //        case "Museum":
@@ -76,6 +76,11 @@ struct ContentView: View {
                 }
                 
             }
+            .onAppear {
+                formatter.dateStyle = .short
+                formatter.dateFormat = "dd/MM/yyyy HH:MM"
+//                currentTrack.loadTrack()
+            }
             .padding()
 //            .scrollDisabled(true)
 
@@ -86,8 +91,8 @@ struct ContentView: View {
     
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct CountryView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        CountryView(code: "PL")
     }
 }
