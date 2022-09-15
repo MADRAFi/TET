@@ -14,6 +14,7 @@
 		80A6953428CE46E4009FEDCA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6953328CE46E4009FEDCA /* MapView.swift */; };
 		80A6953B28CE47B6009FEDCA /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6953A28CE47B6009FEDCA /* MapViewModel.swift */; };
 		80D5B97028D12C700028679E /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B96F28D12C700028679E /* TrackModel.swift */; };
+		80D5B97228D2A3E40028679E /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B97128D2A3E40028679E /* Symbols.swift */; };
 		80EDE7AE28CEAAF300F790B6 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 80EDE7AD28CEAAF300F790B6 /* CoreGPX */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		80A6953328CE46E4009FEDCA /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		80A6953A28CE47B6009FEDCA /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		80D5B96F28D12C700028679E /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
+		80D5B97128D2A3E40028679E /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,9 @@
 		80A6952428CE4639009FEDCA /* TET */ = {
 			isa = PBXGroup;
 			children = (
+				80D5B97328D2A4980028679E /* Views */,
 				80A6953928CE47B6009FEDCA /* Models */,
 				80A6952528CE4639009FEDCA /* TETApp.swift */,
-				80A6953328CE46E4009FEDCA /* MapView.swift */,
-				80A6952728CE4639009FEDCA /* ContentView.swift */,
 				80A6952928CE463A009FEDCA /* Assets.xcassets */,
 				80A6952B28CE463A009FEDCA /* Preview Content */,
 			);
@@ -82,8 +83,18 @@
 			children = (
 				80A6953A28CE47B6009FEDCA /* MapViewModel.swift */,
 				80D5B96F28D12C700028679E /* TrackModel.swift */,
+				80D5B97128D2A3E40028679E /* Symbols.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		80D5B97328D2A4980028679E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				80A6953328CE46E4009FEDCA /* MapView.swift */,
+				80A6952728CE4639009FEDCA /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +176,7 @@
 				80A6952828CE4639009FEDCA /* ContentView.swift in Sources */,
 				80A6953428CE46E4009FEDCA /* MapView.swift in Sources */,
 				80A6952628CE4639009FEDCA /* TETApp.swift in Sources */,
+				80D5B97228D2A3E40028679E /* Symbols.swift in Sources */,
 				80D5B97028D12C700028679E /* TrackModel.swift in Sources */,
 				80A6953B28CE47B6009FEDCA /* MapViewModel.swift in Sources */,
 			);
