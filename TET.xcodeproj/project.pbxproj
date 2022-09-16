@@ -14,7 +14,6 @@
 		80A6953428CE46E4009FEDCA /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6953328CE46E4009FEDCA /* MapView.swift */; };
 		80A6953B28CE47B6009FEDCA /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80A6953A28CE47B6009FEDCA /* MapViewModel.swift */; };
 		80D5B97028D12C700028679E /* TrackModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B96F28D12C700028679E /* TrackModel.swift */; };
-		80D5B97228D2A3E40028679E /* Symbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B97128D2A3E40028679E /* Symbols.swift */; };
 		80D5B97528D375810028679E /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B97428D375810028679E /* CountryListView.swift */; };
 		80D5B97828D378750028679E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B97728D378750028679E /* Country.swift */; };
 		80D5B97B28D3A3860028679E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D5B97D28D3A3860028679E /* Localizable.strings */; };
@@ -30,7 +29,6 @@
 		80A6953328CE46E4009FEDCA /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		80A6953A28CE47B6009FEDCA /* MapViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		80D5B96F28D12C700028679E /* TrackModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackModel.swift; sourceTree = "<group>"; };
-		80D5B97128D2A3E40028679E /* Symbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Symbols.swift; sourceTree = "<group>"; };
 		80D5B97428D375810028679E /* CountryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryListView.swift; sourceTree = "<group>"; };
 		80D5B97728D378750028679E /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		80D5B97C28D3A3860028679E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; usesTabs = 0; };
@@ -90,7 +88,6 @@
 		80A6953928CE47B6009FEDCA /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				80D5B97128D2A3E40028679E /* Symbols.swift */,
 				80D5B97728D378750028679E /* Country.swift */,
 			);
 			path = Models;
@@ -195,7 +192,6 @@
 				80A6952828CE4639009FEDCA /* CountryView.swift in Sources */,
 				80A6953428CE46E4009FEDCA /* MapView.swift in Sources */,
 				80A6952628CE4639009FEDCA /* TETApp.swift in Sources */,
-				80D5B97228D2A3E40028679E /* Symbols.swift in Sources */,
 				80D5B97828D378750028679E /* Country.swift in Sources */,
 				80D5B97028D12C700028679E /* TrackModel.swift in Sources */,
 				80D5B97528D375810028679E /* CountryListView.swift in Sources */,

@@ -10,13 +10,14 @@ import SwiftUI
 
 struct CountryView: View {
     
-    @State var code: String
+    @State var country: Country
     @StateObject var currentTrack: TrackModel = TrackModel()
     let formatter = DateFormatter()
     
-//    init() {
-//        formatter.dateStyle = .short
-//        formatter.dateFormat = "dd/MM/yyyy HH:MM"
+//    init(code: String) {
+////        formatter.dateStyle = .short
+////        formatter.dateFormat = "dd/MM/yyyy HH:MM"
+//        currentTrack.loadTrack(code: code)
 //    }
 //
 //    func getWaypointSymbol(symbol: String) -> Image {
@@ -31,6 +32,12 @@ struct CountryView: View {
             VStack {
                 ProgressView()
             }
+            .onAppear {
+                currentTrack.isLoading = true
+                currentTrack.loadTrack(file: country.file)
+            }
+            .navigationTitle(LocalizedStringKey(country.name))
+            
         } else {
             List {
                 Section(header: Text("Information")) {
@@ -59,9 +66,12 @@ struct CountryView: View {
                         ForEach(currentTrack.trackDistances, id: \.name) { track in
                             HStack {
                                 Text(track.name)
+                                    .font(.caption2)
                                 Spacer()
                                 Text("\(String(Int(round(track.distance / 1000)))) km")
+                                    .font(.caption2)
                             }
+                            .padding(.vertical, 3)
                         }
                         //                List {
                         //                    ForEach(currentTrack.waypoints, id: \.name) { waypoint in
@@ -79,20 +89,23 @@ struct CountryView: View {
             .onAppear {
                 formatter.dateStyle = .short
                 formatter.dateFormat = "dd/MM/yyyy HH:MM"
-//                currentTrack.loadTrack()
             }
             .padding()
-//            .scrollDisabled(true)
+//            .navigationTitle(country.name)
+            .navigationTitle(LocalizedStringKey(country.name))
 
         }
+
+
     }
-    
+
 
     
 }
 
 struct CountryView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryView(code: "PL")
+        CountryView(country: Country(name:"Poland", code: "PL", file: "pl.gpx"))
     }
 }
+

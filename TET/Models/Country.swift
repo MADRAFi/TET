@@ -9,7 +9,9 @@ import Foundation
 import SwiftUI
 
 struct Country {
-    var name: LocalizedStringKey
+    var name: String
     var code: String
+    var file: String
+    
 }
 
