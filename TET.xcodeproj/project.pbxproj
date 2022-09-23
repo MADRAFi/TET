@@ -21,7 +21,6 @@
 		80D5B98A28D60C240028679E /* GPXTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B98928D60C240028679E /* GPXTrackView.swift */; };
 		80D5B99028D7C3F90028679E /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B98F28D7C3F90028679E /* CountryDetailView.swift */; };
 		80D5B99228D921CA0028679E /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B99128D921CA0028679E /* CountryModel.swift */; };
-		80D5B99F28DD21BA0028679E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B99E28DD21BA0028679E /* ContentView.swift */; };
 		80EDE7AE28CEAAF300F790B6 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 80EDE7AD28CEAAF300F790B6 /* CoreGPX */; };
 /* End PBXBuildFile section */
 
@@ -43,7 +42,6 @@
 		80D5B98928D60C240028679E /* GPXTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXTrackView.swift; sourceTree = "<group>"; };
 		80D5B98F28D7C3F90028679E /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		80D5B99128D921CA0028679E /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
-		80D5B99E28DD21BA0028679E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				80A6953328CE46E4009FEDCA /* MapView.swift */,
-				80D5B99E28DD21BA0028679E /* ContentView.swift */,
 				80A6952728CE4639009FEDCA /* CountryView.swift */,
 				80D5B98928D60C240028679E /* GPXTrackView.swift */,
 				80D5B97428D375810028679E /* CountryListView.swift */,
@@ -208,7 +205,6 @@
 			files = (
 				80D5B99028D7C3F90028679E /* CountryDetailView.swift in Sources */,
 				80A6952828CE4639009FEDCA /* CountryView.swift in Sources */,
-				80D5B99F28DD21BA0028679E /* ContentView.swift in Sources */,
 				80A6953428CE46E4009FEDCA /* MapView.swift in Sources */,
 				80A6952628CE4639009FEDCA /* TETApp.swift in Sources */,
 				80D5B99228D921CA0028679E /* CountryModel.swift in Sources */,
