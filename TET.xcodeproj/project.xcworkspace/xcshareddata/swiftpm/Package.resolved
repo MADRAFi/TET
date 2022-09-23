@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "coregpx",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/vincentneo/CoreGPX",
+      "state" : {
+        "branch" : "master",
+        "revision" : "086b779ec2690dcf52ec01f2f5b460e09b16e620"
+      }
+    }
+  ],
+  "version" : 2
+}
