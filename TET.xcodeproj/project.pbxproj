@@ -17,6 +17,11 @@
 		80D5B97528D375810028679E /* CountryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B97428D375810028679E /* CountryListView.swift */; };
 		80D5B97828D378750028679E /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B97728D378750028679E /* Country.swift */; };
 		80D5B97B28D3A3860028679E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 80D5B97D28D3A3860028679E /* Localizable.strings */; };
+		80D5B98328D53C210028679E /* tet.json in Resources */ = {isa = PBXBuildFile; fileRef = 80D5B98528D53C210028679E /* tet.json */; };
+		80D5B98A28D60C240028679E /* GPXTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B98928D60C240028679E /* GPXTrackView.swift */; };
+		80D5B99028D7C3F90028679E /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B98F28D7C3F90028679E /* CountryDetailView.swift */; };
+		80D5B99228D921CA0028679E /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B99128D921CA0028679E /* CountryModel.swift */; };
+		80D5B99F28DD21BA0028679E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B99E28DD21BA0028679E /* ContentView.swift */; };
 		80EDE7AE28CEAAF300F790B6 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 80EDE7AD28CEAAF300F790B6 /* CoreGPX */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +38,12 @@
 		80D5B97728D378750028679E /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		80D5B97C28D3A3860028679E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; usesTabs = 0; };
 		80D5B97E28D3A3930028679E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
+		80D5B98428D53C210028679E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/tet.json; sourceTree = "<group>"; };
+		80D5B98628D53C4B0028679E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = pl; path = pl.lproj/tet.json; sourceTree = "<group>"; };
+		80D5B98928D60C240028679E /* GPXTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXTrackView.swift; sourceTree = "<group>"; };
+		80D5B98F28D7C3F90028679E /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
+		80D5B99128D921CA0028679E /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		80D5B99E28DD21BA0028679E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +84,7 @@
 				80A6952928CE463A009FEDCA /* Assets.xcassets */,
 				80A6952B28CE463A009FEDCA /* Preview Content */,
 				80D5B97D28D3A3860028679E /* Localizable.strings */,
+				80D5B98528D53C210028679E /* tet.json */,
 			);
 			path = TET;
 			sourceTree = "<group>";
@@ -97,8 +109,11 @@
 			isa = PBXGroup;
 			children = (
 				80A6953328CE46E4009FEDCA /* MapView.swift */,
+				80D5B99E28DD21BA0028679E /* ContentView.swift */,
 				80A6952728CE4639009FEDCA /* CountryView.swift */,
+				80D5B98928D60C240028679E /* GPXTrackView.swift */,
 				80D5B97428D375810028679E /* CountryListView.swift */,
+				80D5B98F28D7C3F90028679E /* CountryDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +123,7 @@
 			children = (
 				80A6953A28CE47B6009FEDCA /* MapViewModel.swift */,
 				80D5B96F28D12C700028679E /* TrackModel.swift */,
+				80D5B99128D921CA0028679E /* CountryModel.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -177,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80A6952D28CE463A009FEDCA /* Preview Assets.xcassets in Resources */,
+				80D5B98328D53C210028679E /* tet.json in Resources */,
 				80D5B97B28D3A3860028679E /* Localizable.strings in Resources */,
 				80A6952A28CE463A009FEDCA /* Assets.xcassets in Resources */,
 			);
@@ -189,11 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80D5B99028D7C3F90028679E /* CountryDetailView.swift in Sources */,
 				80A6952828CE4639009FEDCA /* CountryView.swift in Sources */,
+				80D5B99F28DD21BA0028679E /* ContentView.swift in Sources */,
 				80A6953428CE46E4009FEDCA /* MapView.swift in Sources */,
 				80A6952628CE4639009FEDCA /* TETApp.swift in Sources */,
+				80D5B99228D921CA0028679E /* CountryModel.swift in Sources */,
 				80D5B97828D378750028679E /* Country.swift in Sources */,
 				80D5B97028D12C700028679E /* TrackModel.swift in Sources */,
+				80D5B98A28D60C240028679E /* GPXTrackView.swift in Sources */,
 				80D5B97528D375810028679E /* CountryListView.swift in Sources */,
 				80A6953B28CE47B6009FEDCA /* MapViewModel.swift in Sources */,
 			);
@@ -209,6 +230,15 @@
 				80D5B97E28D3A3930028679E /* pl */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		80D5B98528D53C210028679E /* tet.json */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80D5B98428D53C210028679E /* en */,
+				80D5B98628D53C4B0028679E /* pl */,
+			);
+			name = tet.json;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -339,6 +369,7 @@
 				DEVELOPMENT_TEAM = ZBBD84W4M2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location authorization is required for the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -369,6 +400,7 @@
 				DEVELOPMENT_TEAM = ZBBD84W4M2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.navigation";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Location authorization is required for the application.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

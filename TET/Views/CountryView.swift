@@ -11,101 +11,86 @@ import SwiftUI
 struct CountryView: View {
     
     @State var country: Country
-    @StateObject var currentTrack: TrackModel = TrackModel()
-    let formatter = DateFormatter()
-    
-//    init(code: String) {
-////        formatter.dateStyle = .short
-////        formatter.dateFormat = "dd/MM/yyyy HH:MM"
-//        currentTrack.loadTrack(code: code)
-//    }
-//
-//    func getWaypointSymbol(symbol: String) -> Image {
-//        switch symbol {
-//        case "Museum":
-//            Image(
-//        }
-//    }
+    @StateObject var currentTrack: TrackModel
+    //    @State var cm: CountryModel
+    //    @State var selectedTab: Int = 0
     
     var body: some View {
-        if currentTrack.isLoading {
             VStack {
-                ProgressView()
-            }
-            .onAppear {
-                currentTrack.isLoading = true
-                currentTrack.loadTrack(file: country.file)
-            }
-            .navigationTitle(LocalizedStringKey(country.name))
-            
-        } else {
-            List {
-                Section(header: Text("Information")) {
-                    VStack {
-                        HStack {
-                            Text("Date")
-                            Spacer()
-                            Text(formatter.string(from: currentTrack.date))
-                            
-                        }
-                        HStack {
-                            Text("Tracks")
-                            Spacer()
-                            Text(String(currentTrack.tracks.count))
-                        }
-                        HStack {
-                            Text("Waypoints")
-                            Spacer()
-                            Text(String(currentTrack.waypoints.count))
-                        }
-                        HStack {
-                            Text("Total Distance")
-                            Spacer()
-                            Text("\(String(Int(round(currentTrack.totalDistance / 1000)))) km")
-                        }
-                        ForEach(currentTrack.trackDistances, id: \.name) { track in
-                            HStack {
-                                Text(track.name)
-                                    .font(.caption2)
-                                Spacer()
-                                Text("\(String(Int(round(track.distance / 1000)))) km")
-                                    .font(.caption2)
+//                Text(LocalizedStringKey(country.name))
+//                    .font(.title2)
+//                    .fontWeight(.heavy)
+//                    .padding(.top, 10)
+                TabView() {
+                    ForEach(country.images, id: \.self) { img in
+                        Image("\(img)")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .clipShape(RoundedRectangle(cornerRadius: 15))
+                            .padding()
+                            .shadow(color: .secondary ,radius: 5)
+                            .tag("\(img)")
+                            .tabItem {
+                                Text("\(img)")
                             }
-                            .padding(.vertical, 3)
-                        }
-                        //                List {
-                        //                    ForEach(currentTrack.waypoints, id: \.name) { waypoint in
-                        //                        HStack {
-                        //                            Text(waypoint.symbol ?? "waypoint")
-                        //                        }
-                        //                    }
-                        //                }
-                        Spacer()
+                        
                     }
-                    
                 }
+                .tabViewStyle(.page)
+                .indexViewStyle(.page(backgroundDisplayMode: .always))
+                Spacer()
+                GPXTrackView()
+                    .environmentObject(currentTrack)
+                Spacer()
+                TabBarCountryView()
+//                Spacer(minLength: .infinity)
                 
             }
-            .onAppear {
-                formatter.dateStyle = .short
-                formatter.dateFormat = "dd/MM/yyyy HH:MM"
-            }
-            .padding()
-//            .navigationTitle(country.name)
-            .navigationTitle(LocalizedStringKey(country.name))
-
-        }
-
-
+        
+        //        .navigationBarHidden(true)
+        //        .navigationBarTitleDisplayMode(.inline)
+                .navigationTitle(LocalizedStringKey(country.name))
     }
-
-
+    
+    @ViewBuilder
+    func TabBarCountryView() -> some View {
+        ZStack {
+            HStack {
+                NavigationLink {
+                    MapView()
+                } label: {
+                    Image(systemName: "mappin.and.ellipse")
+                        .frame(width: 44, height: 44)
+                }
+                Spacer()
+                NavigationLink {
+                    CountryDetailView(country: country)
+                } label: {
+                    Image(systemName: "list.bullet.rectangle")
+                        .frame(width: 44, height: 44)
+                }
+            }
+            .font(.title)
+            .foregroundColor(Color("AccentColor"))
+            .padding(EdgeInsets(top: 0, leading: 32, bottom: 0, trailing: 32))
+            
+        }
+        //        .frame(maxHeight: .infinity, alignment: .bottom)
+        //        .ignoresSafeArea()
+        
+    }
+    
+    
+    
     
 }
 
+
+
 struct CountryView_Previews: PreviewProvider {
     static var previews: some View {
-        CountryView(country: Country(name:"Poland", code: "PL", file: "pl.gpx"))
+        //        CountryView(country: Country.example, cm: CountryModel(code: Country.example.code))
+        CountryView(country: Country.example, currentTrack: TrackModel(file: Country.example.file))
     }
 }
 

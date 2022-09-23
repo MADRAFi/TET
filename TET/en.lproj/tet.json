@@ -1,0 +1,81 @@
+[
+    {
+        "id": 1,
+        "name": "Albania",
+        "code": "AL",
+        "file": "AL.gpx",
+        "best_time": "May - October",
+        "entry_point": "Hani Hotit",
+        "exit_point": "Qafe Bote",
+        "languages": "Albanian",
+        "currency": "Lek (ALL)",
+        "emergency": "112",
+        "drive_side": "Right",
+        "wild_camping": "Camping in the wild is not regulated by law. There are no patrols outside of touristic areas. However if you meet locals, ask for permission and show respect to their land. If you decide to wild camp in remote areas, it is important to keep your fire going all night to keep bears and wolves away.",
+        "trial_riding": "There are no laws regulating trail riding in Albania",
+        "bike_events": ["Rally Albania - www.rallyalbania.org"],
+        "overview": "Albania is a wonderful country where nature is still untouched and there is an immense amount of off-road opportunities. Most other European countries say exactly where you can (and cannot) ride your motorcycle off road but in Albania the story is at the moment very different. You can still find huge amounts of unpaved roads, trails and hidden villages. You can still get that feeling of being truly remote, away from the developed world. Albania actually consists of two parts: the low coastal land and the mountainous interior. Three quarters of the Albania is mountainous and often uninhabitable and inaccessible. The highest mountain is Korab ( 2763 m ) located in the Korabit mountains on the border with Macedonia and the Serbian province of Kosovo . The hill country has elongated ridges, sharply cut small plateaus with lakes and small basins. Trails are often unmaintained and sometimes damaged from heavy rains, so the riding can be quite demanding. The TET Albania will lead you through some of the most amazing landscapes enriched with a variety of lush terrain, warm-hearted people and traditional culture.",
+        "not_miss": "If you can, take time for the beaches in the southwest and mountains in the north, the forgotten archeological sites, regional cuisine like fresh trout from a local river, gjellë (a stew of slowly cooked meat with various vegetables) and mazja or flija (a many layered pancake-like dish cooked outdoors over open coals, steamed, and often served with local honey). Spend some time with the local people to get familiar with their stories.",
+        "resources": [
+            "http://www.albaniantourist.com/index.html",
+            "https://www.lonelyplanet.com/albania",
+            "https://www.gov.uk/foreign-travel-advice/albania"
+        ],
+        "images": [
+            "Albania-01", "Albania-04", "Albania-06", "Albania-09", "Albania-10", "Albania-11"
+        ],
+        "linesman_email": "al@"
+    },
+    {
+        "id": 2,
+        "name": "Andorra",
+        "code": "AD",
+        "file": "AND.gpx",
+        "best_time": "Mid May - Mid November although snow has been know to fall on Pic Negre in August",
+        "entry_point": "La Rabassa Ski Resort",
+        "exit_point": "Port de Cabús",
+        "languages": "Catalan although Spanish is spoken by everyone, French by half and English by a quarter (roughly)",
+        "currency": "Euro",
+        "emergency": "Fire & Mountain Rescue 112. Police 110",
+        "drive_side": "Right",
+        "wild_camping": "Wild camping is illegal unless beside a mountain refuge.",
+        "trial_riding": "Motorcycles are not allowed on walking trails of any kind. I am working hard to clarify where TET riders can go and find out what the fines are if you get it wrong. Watch this space...",
+        "bike_events": ["Andorra is into Trial Riding and Ice Riding and there are races and events dotted throughout the year. See the Andorran Motorcycle Federation website for a calendar - www.fma.ad"],
+        "overview": "Andorra is full of amazing trails but unfortunately most of them have dead ends or are too technical for adventure bikes. Consequently, there are not many trails in the Andorran part of the TET and you will find yourself passing through mainly on tarmac. That said, surrounding Spain is a treasure chest and Andorra is an important stepping stone when riding them. The trail riding laws here are also fairly vague, some say allowing authorities to turn a blind eye on locals and stop tourists. That said, it is a relaxed country of lovely people, so if you find yourself lost on private land and respectfully ask the locals for directions, you will be confronted with nothing but smiles and a friendly finger pointing in the right direction.",
+        "not_miss": "Andorra is a pretty small country but it has a lot to offer if you know where to look. Make sure you take a ride on the Tobotronc which you will pass right by next to Pic Negre. If you like rollercoasters you’ll love it! If you have time and you’re not afraid of heights, stop by the tourist office and ask about the various Via Ferratas around Andorra, they are truly breathtaking in every way (the views, physically and mentally!). Lastly, as a biker, if you need gear, stop by one of the many motorcycle shops in the country. Motocard in Andorra La Vella has 2 floors of bike gear at tax free prices. You’ll probably end up leaving the country with a new set of tyres and an extra bag on your bike packed with goodies.",
+        "resources": [""],
+        "images": [
+            "Andorra-01", "Andorra-02", "Andorra-03"
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Belarus",
+        "code": "BY",
+        "file": "BY.gpx",
+        "best_time": "May-October is warm enough for camping.",
+        "entry_point": "Dolsk / Mohro",
+        "exit_point": "Pryvalka / Raigardas",
+        "languages": "Russian, Belarusian",
+        "currency": "Belarusian ruble, BYN",
+        "emergency": "Firefighters - 101. Police - 102. Medics - 103",
+        "drive_side": "Right",
+        "wild_camping": "It’s allowed to camp in the wild, if the location is not included in a protected area. In protected areas there are special places for camping, sometimes a fee is required.",
+        "trial_riding": "In 2017 the local environment protection law was updated with an article whereby “touristic trips” are prohibited if they have harmful effects on the environment or there is a threat of such effects. The wording is vague. In practice you won’t be fined unless you are caught driving on cultivated fields. So just use common sense, don’t ignore prohibiting signs, closed road gates, etc. In addition, during droughts some forests can be closed for driving except for public roads, the fine for contravening this is ca 300 EUR. Map available https://www.mlh.by/maps/map.php",
+        "bike_events": [
+            "May 24-26 Brest motorcycle festival",
+            "May 24-26 Motorcycle festival in Mosty",
+            "June 7-9 Grodno motorcycle festival",
+            "June 29-July 1 Baranovichi MotoFestWest",
+            "August Village Party in Motohostel Route P98",
+            "October 12 End of Season in Motohostel Route P98"
+            ],
+        "overview": "Travelling to Belarus by land requires a visa. VISA: If you travel overland, you’ll need to apply for a visa. Single-entry visa is valid for up to 90 days and costs 60 EUR (25 EUR for citizens of Poland, Lithuania, Estonia and Latvia). Information about application procedure can be found here Belarus offers visa-free entrance for 30 days for citizens of 74 countries, but unfortunately only for those who arrive through the airport.REGISTRATION: Some red tape: if you are staying in the country for longer than 5 business days (excluding weekends and public holidays), you need to register the address of your stay. Starting from 2019, it can be done online for free https://www.belarus.by/en/travel/travel-visas. If you plan to stay in hotels/hostels, they will do the work for you. If you have friends who live on Belarus - they can do it for you as well. BORDER ZONE PERMIT: TET starts right after the border and so is in 'border zone'. If you want to do it all from the start, you need to apply for a permit (yes, again!). All the information is here The Linesperson can help with this, if needed. Otherwise, you’ll have to drive at least 10 km on the main road and then turn TET-wards. I hope all the above mentioned won’t discourage you from visiting Belarus! GENERAL:Belarus has a lot to offer for the dual-sport traveler - nice gravel roads, sandy man-made trails going through multiple bogs, routes through abandoned villages, ancient forests with wild animals, beautiful lakes and rivers with perfect spots for camping. Currently the route connects Ukraine and Lithuania and goes through 2 of the 6 regions of the country. It will soon be updated to include 2 more regions. TET starts right after the border, taking you through the network of agricultural water channels, fields and forests to the free manually-operated ferry over the Dnepr-Bug channel. The route continues through forests to some local sights. You can stay in a motorcycle hostel which is on the TET and has some places for good riding around it. The trail then follows an abandoned road amongst bogs which leads to some abandoned villages. In Grodno region you ride through Lipchansky reserve (obtaining the permit in advance, of course. It’s simple and you can pay when you arrive. ) The director can set up a camp sauna if it’s not a weekend. TET will then take you along the roads used for local rallies and jeep trophies. Keep your eyes open - there’s plenty of things to see along the route, including wild animals, birds and, if you are lucky, even a rare European bison!",
+        "not_miss": "Draniki, borsch, salo, and samogon (house-made vodka) for those willing to take risks. Alot of battles have taken place in Belarus during both World Wars and many forts are still scattered through the forests. Brest fortress which is in the city not far from TET is one of the most important WWII-related memorials.",
+        "resources": [""],
+        "images": [
+            "Belarus-01", "Belarus-02", "Belarus-04", "Belarus-06", "Belarus-08", "Belarus-09"
+        ]
+    }
+    
+]

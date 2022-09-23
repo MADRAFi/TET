@@ -24,6 +24,9 @@ class TrackModel: ObservableObject {
     @Published var date = Date()
     @Published var isLoading: Bool = true
 
+    init (file: String) {
+        loadTrack(file: file)
+    }
     func loadTrack(file: String) {
         let today = Date()
         if file.isEmpty {

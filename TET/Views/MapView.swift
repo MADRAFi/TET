@@ -15,22 +15,31 @@ struct MapView: View {
         ZStack(alignment: .bottom) {
             Map(coordinateRegion: $viewModel.region, showsUserLocation: true)
                 .ignoresSafeArea()
-
                 .accentColor(Color("PositionColor"))
-                .onAppear {
-                    viewModel.requestLocationPermission()
-                }
+
             
-            LocationButton(.currentLocation) {
-                viewModel.requestLocationPermission()
+//            LocationButton(.currentLocation) {
+//                viewModel.requestLocationPermission()
+//            }
+//            LocationButton(action: viewModel.requestLocationPermission)
+            LocationButton(LocationButton.Title.currentLocation) {
+                // Start updating location when user taps the button.
+                // Location button doesn't require the additional step of calling `requestWhenInUseAuthorization()`.
+//                manager.startUpdatingLocation()
+                viewModel.startUpdatingLocation()
             }
-            .foregroundColor(.primary)
-            .cornerRadius(10)
-            .labelStyle(.titleAndIcon)
-            .symbolVariant(.fill)
-            .tint(Color("AccentColor"))
-            .padding(.bottom, 50)
+//                .foregroundColor(.primary)
+//                .cornerRadius(10)
+//                .labelStyle(.titleAndIcon)
+//                .symbolVariant(.fill)
+//                .tint(Color("AccentColor"))
+//                .padding(.bottom, 50)
+            
+
         }
+//        .onAppear {
+//            viewModel.requestLocationPermission()
+//        }
     }
 }
 
