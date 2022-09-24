@@ -64,7 +64,7 @@ final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate 
 //        locationManager.startUpdatingHeading()
     }
     
-    func
+    
     
     //    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
     //        checkLocationAuthorization()

@@ -12,7 +12,7 @@ struct MapView: View {
 //    @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var currentTrack: TrackModel
     @StateObject private var viewModel = MapViewModel()
-    var waypoint: CLLocation
+
     
 
     
@@ -24,6 +24,7 @@ struct MapView: View {
 //            Map(coordinateRegion: $viewModel.region ,showsUserLocation: true)
             Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: currentTrack.waypoints,
                 annotationContent: { location in
+                var waypoint: CLLocation
                     waypoint.coordinate.latitude = location.latitude
                     waypoint.coordinate.longitude = location.longitude
                 

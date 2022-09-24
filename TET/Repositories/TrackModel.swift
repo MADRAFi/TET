@@ -23,6 +23,7 @@ extension GPXWaypoint : Identifiable {
         get {
             return self.id
         }
+    }
 }
 
 class TrackModel: ObservableObject {
@@ -92,11 +93,5 @@ class TrackModel: ObservableObject {
         }
         self.totalDistance = totalDistance
     }
-    
-    
-//    func draw() {
-//
-//    }
-    
     
 }
