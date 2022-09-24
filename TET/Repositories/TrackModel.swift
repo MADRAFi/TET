@@ -9,10 +9,22 @@ import MapKit
 import Foundation
 
 struct TrackDistance {
-    var id = UUID().uuidString
+    var id = UUID()
     var name: String = ""
     var distance: Double = 0.0
 }
+
+
+extension GPXWaypoint : Identifiable {
+    public var id: UUID {
+        set {
+            self.id = UUID()
+        }
+        get {
+            return self.id
+        }
+}
+
 class TrackModel: ObservableObject {
     
 

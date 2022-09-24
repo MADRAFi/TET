@@ -58,6 +58,7 @@ struct CountryView: View {
             HStack {
                 NavigationLink {
                     MapView()
+                        .environmentObject(currentTrack)
                 } label: {
                     Image(systemName: "mappin.and.ellipse")
                         .frame(width: 44, height: 44)

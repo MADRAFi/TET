@@ -13,7 +13,7 @@ enum MapDetails {
     static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
 }
 
-final class MapViewModel: NSObject, ObservableObject {
+final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     
     @Published var region: MKCoordinateRegion = MKCoordinateRegion(center: MapDetails.startingLocation, span: MapDetails.defaultSpan)
     @Published var location: CLLocationCoordinate2D?
@@ -22,7 +22,7 @@ final class MapViewModel: NSObject, ObservableObject {
 
         override init() {
             super.init()
-//            locationManager.delegate = self
+            locationManager.delegate = self
             locationManager.desiredAccuracy = kCLLocationAccuracyBest
 //            locationManager.activityType = .automotiveNavigation
 
@@ -63,6 +63,8 @@ final class MapViewModel: NSObject, ObservableObject {
         locationManager.startUpdatingLocation()
 //        locationManager.startUpdatingHeading()
     }
+    
+    func
     
     //    func locationManagerDidChangeAuthorization(_ manager: CLLocationManager) {
     //        checkLocationAuthorization()
