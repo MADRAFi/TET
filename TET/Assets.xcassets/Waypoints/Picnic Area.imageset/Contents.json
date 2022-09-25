@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Picnic Area.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Beach.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

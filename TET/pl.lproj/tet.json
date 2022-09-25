@@ -75,6 +75,33 @@
         "images": [
             "Belarus-01", "Belarus-02", "Belarus-04", "Belarus-06", "Belarus-08", "Belarus-09"
         ]
+    },
+    {
+        "id": 100,
+        "name": "Polska",
+        "code": "PL",
+        "file": "PL.gpx",
+        "best_time": "From spring to autumn. The motorcycle season in Poland starts in May when the temperatures are around 15 degrees Celsius during the day. The end of the season is the September/October.",
+        "entry_point": "Hrebenne",
+        "exit_point": "Berżniki",
+        "languages": "Polish. Younger people speak some Engllish and/or German",
+        "currency": "Polish zloty, PLN",
+        "emergency": "112, 997 - Police, 998 fire brigade, 999 - emergency medical services",
+        "drive_side": "Right",
+        "wild_camping": "Wild camping in the forest is illegal, but if you stop in a wild place, do not leave rubbish and in the morning you move on - it should be a OK.",
+        "trial_riding": "All roads outside forests are usually legal and in the eastern part of the country there are many legal unpaved forest roads. If you do ride in the forests illegally, you may come across Forest Guards. The fine is about Euro 125.",
+        "bike_events": [
+            "In this region of Poland there are no regular rallies or enduro events",
+            ],
+        "overview": "The south of the country is mountainous, but there are hardly any legal unpaved routes. The central part of Poland is large plains and river backwaters with many old villages filled with thatched houses. The northern part of the route winds among the beautiful glacial lakes and hills.",
+        "not_miss": "The route leads through many attractions such as: Disused bunkers and military bases, Hand powered ferries, Historic castles, Nature reserves, Bison reserve",
+        "resources": [
+            "http://www.poland.travel/en",
+            "https://www.lonelyplanet.com/poland"
+        ],
+        "images": [
+            "Poland-01", "Poland-04", "Poland-06", "Poland-08", "Poland-10"
+        ]
     }
     
 ]

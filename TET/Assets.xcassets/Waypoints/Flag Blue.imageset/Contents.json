@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Flag Blue.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

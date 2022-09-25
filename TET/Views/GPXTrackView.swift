@@ -76,7 +76,7 @@ struct GPXTrackView: View {
         .padding()
         .onAppear {
             formatter.dateStyle = .short
-//            formatter.dateFormat = "dd/MM/yyyy HH:MM"
+            formatter.dateFormat = "dd/MM/yyyy HH:MM"
         }
         Spacer()
     }

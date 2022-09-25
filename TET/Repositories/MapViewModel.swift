@@ -12,6 +12,16 @@ enum MapDetails {
     static let startingLocation = CLLocationCoordinate2D(latitude: 52.302277871885885, longitude: 20.87165867103657)
     static let defaultSpan = MKCoordinateSpan(latitudeDelta: 0.5, longitudeDelta: 0.5)
 }
+//enum WaypointSymbol {
+//    static let Museum = "Museum"
+//    static let Information = "Information"
+//    static let Campground = "Campground"
+////    static let "Square, Blue" = "Square"
+////    "Scenic Area"
+////    "Gas Station"
+////    "Shopping Center"
+//    static let Lodging = "Lodging"
+//}
 
 final class MapViewModel: NSObject, ObservableObject, CLLocationManagerDelegate {
     

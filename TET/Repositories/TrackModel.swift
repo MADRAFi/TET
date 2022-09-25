@@ -14,23 +14,33 @@ struct TrackDistance {
     var distance: Double = 0.0
 }
 
-
-extension GPXWaypoint : Identifiable {
-    public var id: UUID {
-        set {
-            self.id = UUID()
-        }
-        get {
-            return self.id
-        }
-    }
+struct Waypoint: Identifiable {
+    var id = UUID()
+    var time: Date
+    var elevation: Double
+    var coordinates: CLLocationCoordinate2D
+    var name: String
+    var symbol: String
+    var description: String
 }
+
+//extension GPXWaypoint : Identifiable {
+//    public var id: UUID {
+//        set {
+//            self.id = UUID()
+//        }
+//        get {
+//            return self.id
+//        }
+//    }
+//}
 
 class TrackModel: ObservableObject {
     
 
     @Published var tracks = [GPXTrack]()
-    @Published var waypoints = [GPXWaypoint]()
+//    @Published var gpx_waypoints = [GPXWaypoint]()
+    @Published var waypoints = [Waypoint]()
 //    @Published var metadata = GPXMetadata()
     @Published var trackDistances: [TrackDistance] = []
     @Published var totalDistance: Double = 0.0
@@ -56,7 +66,21 @@ class TrackModel: ObservableObject {
 
                 DispatchQueue.main.async {
                     self.tracks = gpx.tracks
-                    self.waypoints = gpx.waypoints
+//                    self.waypoints = gpx.waypoints
+                    for waypoint in gpx.waypoints {
+                        var coordinate: CLLocationCoordinate2D = CLLocationCoordinate2D()
+                        coordinate.longitude = waypoint.longitude ?? 0.0
+                        coordinate.latitude = waypoint.latitude ?? 0.0
+
+                        self.waypoints.append(Waypoint(
+                            time: waypoint.time ?? today,
+                            elevation: waypoint.elevation ?? 0.0,
+                            coordinates: coordinate,
+                            name: waypoint.name ?? "",
+                            symbol: waypoint.symbol ?? "",
+                            description: waypoint.desc ?? ""
+                        ))
+                    }
                     self.date = gpx.metadata?.time ?? today
                     self.calculateTrackDistance()
                     self.isLoading = false

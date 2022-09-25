@@ -16,8 +16,10 @@ struct CountryDetailView: View {
             VStack {
                 TabView {
                     List {
-                        Text(country.overview)
-                            .padding()
+                        Section(header: Text("Overview")) {
+                            Text(country.overview)
+                                .padding()
+                        }
                     }
                     .tabItem {
                         Image(systemName: "info.square")
