@@ -13,6 +13,7 @@ struct Country: Codable {
     var name: String
     var code: String
     var file: String
+    var contact: String
     var best_time: String
     var entry_point: String
     var exit_point: String

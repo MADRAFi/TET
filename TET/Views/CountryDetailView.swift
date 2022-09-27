@@ -54,6 +54,13 @@ struct CountryDetailView: View {
                                 Spacer()
                                 Text(country.currency)
                             }
+                            HStack {
+                                Text("Contact")
+                                    .fontWeight(.semibold)
+                                Spacer()
+                                let markdown = try? AttributedString(markdown: country.contact)
+                                Text(markdown ?? "unknown")
+                            }
                         }
                         Section(header: Text("Languages")) {
                             Text(country.languages)
@@ -65,13 +72,19 @@ struct CountryDetailView: View {
                             Text(country.best_time)
                         }
                         Section(header: Text("Trial Riding")) {
-                            Text(country.trial_riding)
+                            let markdown = try? AttributedString(markdown: country.trial_riding)
+                            Text(markdown ?? "unknown")
+//                            Text(country.trial_riding)
                         }
                         Section(header: Text("Wild Camping")) {
-                            Text(country.wild_camping)
+                            let markdown = try? AttributedString(markdown: country.wild_camping)
+                            Text(markdown ?? "unknown")
+//                            Text(country.wild_camping)
                         }
                         Section(header: Text("Not to Miss")) {
-                            Text(country.not_miss)
+                            let markdown = try? AttributedString(markdown: country.not_miss)
+                            Text(markdown ?? "unknown")
+//                            Text(country.not_miss)
                         }
                         Section(header: Text("Events")) {
                             if (country.bike_events.first == "") {
@@ -81,7 +94,7 @@ struct CountryDetailView: View {
                                 VStack(alignment: .leading) {
                                     ForEach(country.bike_events, id: \.self) { event in
                                         let markdown = try? AttributedString(markdown: event)
-                                        Text(event)
+                                        Text(markdown ?? "uknown")
 //                                        Text(event)
                                             .padding(.vertical, 5)
                                             .padding(.horizontal, 10)

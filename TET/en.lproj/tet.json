@@ -4,6 +4,7 @@
         "name": "Albania",
         "code": "AL",
         "file": "AL.gpx",
+        "contact": "AL@transeurotrail.org",
         "best_time": "May - October",
         "entry_point": "Hani Hotit",
         "exit_point": "Qafe Bote",
@@ -23,14 +24,14 @@
         ],
         "images": [
             "Albania-01", "Albania-04", "Albania-06", "Albania-09", "Albania-10", "Albania-11"
-        ],
-        "linesman_email": "al@"
+        ]
     },
     {
         "id": 2,
         "name": "Andorra",
         "code": "AD",
         "file": "AND.gpx",
+        "contact": "transeurotrail.and@gmail.com",
         "best_time": "Mid May - Mid November although snow has been know to fall on Pic Negre in August",
         "entry_point": "La Rabassa Ski Resort",
         "exit_point": "Port de Cabús",
@@ -53,6 +54,7 @@
         "name": "Belarus",
         "code": "BY",
         "file": "BY.gpx",
+        "contact": "transeurotrail.by@gmail.com",
         "best_time": "May-October is warm enough for camping.",
         "entry_point": "Dolsk / Mohro",
         "exit_point": "Pryvalka / Raigardas",
@@ -61,7 +63,7 @@
         "emergency": "Firefighters - 101. Police - 102. Medics - 103",
         "drive_side": "Right",
         "wild_camping": "It’s allowed to camp in the wild, if the location is not included in a protected area. In protected areas there are special places for camping, sometimes a fee is required.",
-        "trial_riding": "In 2017 the local environment protection law was updated with an article whereby “touristic trips” are prohibited if they have harmful effects on the environment or there is a threat of such effects. The wording is vague. In practice you won’t be fined unless you are caught driving on cultivated fields. So just use common sense, don’t ignore prohibiting signs, closed road gates, etc. In addition, during droughts some forests can be closed for driving except for public roads, the fine for contravening this is ca 300 EUR. Map available https://www.mlh.by/maps/map.php",
+        "trial_riding": "In 2017 the local environment protection law was updated with an article whereby “touristic trips” are prohibited if they have harmful effects on the environment or there is a threat of such effects. The wording is vague. In practice you won’t be fined unless you are caught driving on cultivated fields. So just use common sense, don’t ignore prohibiting signs, closed road gates, etc. In addition, during droughts some forests can be closed for driving except for public roads, the fine for contravening this is ca 300 EUR. Map available [here](https://www.mlh.by/maps/map.php)",
         "bike_events": [
             "May 24-26 Brest motorcycle festival",
             "May 24-26 Motorcycle festival in Mosty",
@@ -82,6 +84,7 @@
         "name": "Poland",
         "code": "PL",
         "file": "PL.gpx",
+        "contact": "PL@transeurotrail.org",
         "best_time": "From spring to autumn. The motorcycle season in Poland starts in May when the temperatures are around 15 degrees Celsius during the day. The end of the season is the September/October.",
         "entry_point": "Hrebenne",
         "exit_point": "Berżniki",
