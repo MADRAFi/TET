@@ -40,7 +40,6 @@
 		80D5B97C28D3A3860028679E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; usesTabs = 0; };
 		80D5B97E28D3A3930028679E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/Localizable.strings; sourceTree = "<group>"; };
 		80D5B98428D53C210028679E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = en; path = en.lproj/tet.json; sourceTree = "<group>"; };
-		80D5B98628D53C4B0028679E /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = pl; path = pl.lproj/tet.json; sourceTree = "<group>"; };
 		80D5B98928D60C240028679E /* GPXTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXTrackView.swift; sourceTree = "<group>"; };
 		80D5B98F28D7C3F90028679E /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		80D5B99128D921CA0028679E /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
@@ -240,7 +239,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				80D5B98428D53C210028679E /* en */,
-				80D5B98628D53C4B0028679E /* pl */,
 			);
 			name = tet.json;
 			sourceTree = "<group>";

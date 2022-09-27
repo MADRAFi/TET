@@ -17,9 +17,12 @@ struct CountryDetailView: View {
                 TabView {
                     List {
                         Section(header: Text("Overview")) {
-                            Text(country.overview)
+                            let markdown = try? AttributedString(markdown: country.overview)
+                            Text(markdown ?? "unknown")
+//                            Text(country.overview)
                                 .padding()
                         }
+                        
                     }
                     .tabItem {
                         Image(systemName: "info.square")
@@ -77,7 +80,9 @@ struct CountryDetailView: View {
                             } else {
                                 VStack(alignment: .leading) {
                                     ForEach(country.bike_events, id: \.self) { event in
+                                        let markdown = try? AttributedString(markdown: event)
                                         Text(event)
+//                                        Text(event)
                                             .padding(.vertical, 5)
                                             .padding(.horizontal, 10)
                                     }
@@ -91,7 +96,9 @@ struct CountryDetailView: View {
                             } else {
                                 VStack(alignment: .leading) {
                                     ForEach(country.resources, id: \.self) { resource in
-                                        Text(resource)
+                                        let markdown = try? AttributedString(markdown: resource)
+                                        Text(markdown ?? "unknown")
+//                                        Text(resource)
                                             .padding(.vertical, 5)
                                             .padding(.horizontal, 10)
                                     }
@@ -109,7 +116,9 @@ struct CountryDetailView: View {
                 }
             }
         }
+        .navigationBarTitleDisplayMode(.inline)
 //        .navigationTitle(LocalizedStringKey(country.name))
+        
     }
 
 }
