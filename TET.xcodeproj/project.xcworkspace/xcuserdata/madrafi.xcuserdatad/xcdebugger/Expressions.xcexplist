@@ -3,16 +3,21 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "closure #1 in closure #1 in TrackModel.loadTrack(file:):TrackModel.swift">
-      </ContextState>
-      <ContextState
          contextName = "closure #1 in closure #2 in closure #1 in closure #1 in GPXTrackView.body.getter:GPXTrackView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "formatter.string(from: currentTrack.date)">
+               value = "currentTrack.date">
             </PersistentString>
             <PersistentString
-               value = "currentTrack.date">
+               value = "formatter.string(from: currentTrack.date)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in closure #1 in closure #3 in CountryView.body.getter:CountryView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "formatter.string(from: currentTrack.date)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -26,10 +31,18 @@
          contextName = "closure #1 in closure #1 in ContentView.body.getter:ContentView.swift">
          <PersistentStrings>
             <PersistentString
-               value = "currentTrack.date">
+               value = "formatter.string(from: currentTrack.date)">
             </PersistentString>
             <PersistentString
-               value = "formatter.string(from: currentTrack.date)">
+               value = "currentTrack.date">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #2 in MapView.body.getter:MapView.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "bottomSheetPosition">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -45,18 +58,13 @@
          contextName = "NSBundle.decode&lt;&#x3c4;_0_0&gt;():Country.swift">
       </ContextState>
       <ContextState
+         contextName = "closure #1 in closure #1 in TrackModel.loadTrack(file:):TrackModel.swift">
+      </ContextState>
+      <ContextState
          contextName = "TrackModel.calculateTrackDistance():TrackModel.swift">
          <PersistentStrings>
             <PersistentString
                value = "segment.points.count">
-            </PersistentString>
-         </PersistentStrings>
-      </ContextState>
-      <ContextState
-         contextName = "closure #1 in closure #1 in closure #1 in closure #3 in CountryView.body.getter:CountryView.swift">
-         <PersistentStrings>
-            <PersistentString
-               value = "formatter.string(from: currentTrack.date)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

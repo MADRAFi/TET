@@ -21,6 +21,8 @@
 		80D5B98A28D60C240028679E /* GPXTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B98928D60C240028679E /* GPXTrackView.swift */; };
 		80D5B99028D7C3F90028679E /* CountryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B98F28D7C3F90028679E /* CountryDetailView.swift */; };
 		80D5B99228D921CA0028679E /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B99128D921CA0028679E /* CountryModel.swift */; };
+		80D5B9A128E228A00028679E /* WaypointInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80D5B9A028E2289F0028679E /* WaypointInfo.swift */; };
+		80D5B9A428E25D7D0028679E /* BottomSheet in Frameworks */ = {isa = PBXBuildFile; productRef = 80D5B9A328E25D7D0028679E /* BottomSheet */; };
 		80EDE7AE28CEAAF300F790B6 /* CoreGPX in Frameworks */ = {isa = PBXBuildFile; productRef = 80EDE7AD28CEAAF300F790B6 /* CoreGPX */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,7 @@
 		80D5B98928D60C240028679E /* GPXTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXTrackView.swift; sourceTree = "<group>"; };
 		80D5B98F28D7C3F90028679E /* CountryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailView.swift; sourceTree = "<group>"; };
 		80D5B99128D921CA0028679E /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		80D5B9A028E2289F0028679E /* WaypointInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				80EDE7AE28CEAAF300F790B6 /* CoreGPX in Frameworks */,
+				80D5B9A428E25D7D0028679E /* BottomSheet in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +115,7 @@
 				80D5B98928D60C240028679E /* GPXTrackView.swift */,
 				80D5B97428D375810028679E /* CountryListView.swift */,
 				80D5B98F28D7C3F90028679E /* CountryDetailView.swift */,
+				80D5B9A028E2289F0028679E /* WaypointInfo.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +148,7 @@
 			name = TET;
 			packageProductDependencies = (
 				80EDE7AD28CEAAF300F790B6 /* CoreGPX */,
+				80D5B9A328E25D7D0028679E /* BottomSheet */,
 			);
 			productName = TET;
 			productReference = 80A6952228CE4639009FEDCA /* TET.app */;
@@ -174,6 +180,7 @@
 			mainGroup = 80A6951928CE4639009FEDCA;
 			packageReferences = (
 				80EDE7AC28CEAAF300F790B6 /* XCRemoteSwiftPackageReference "CoreGPX" */,
+				80D5B9A228E25D7D0028679E /* XCRemoteSwiftPackageReference "BottomSheet" */,
 			);
 			productRefGroup = 80A6952328CE4639009FEDCA /* Products */;
 			projectDirPath = "";
@@ -211,6 +218,7 @@
 				80D5B97828D378750028679E /* Country.swift in Sources */,
 				80D5B97028D12C700028679E /* TrackModel.swift in Sources */,
 				80D5B98A28D60C240028679E /* GPXTrackView.swift in Sources */,
+				80D5B9A128E228A00028679E /* WaypointInfo.swift in Sources */,
 				80D5B97528D375810028679E /* CountryListView.swift in Sources */,
 				80A6953B28CE47B6009FEDCA /* MapViewModel.swift in Sources */,
 			);
@@ -440,6 +448,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		80D5B9A228E25D7D0028679E /* XCRemoteSwiftPackageReference "BottomSheet" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lucaszischka/BottomSheet";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
 		80EDE7AC28CEAAF300F790B6 /* XCRemoteSwiftPackageReference "CoreGPX" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/vincentneo/CoreGPX";
@@ -451,6 +467,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		80D5B9A328E25D7D0028679E /* BottomSheet */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 80D5B9A228E25D7D0028679E /* XCRemoteSwiftPackageReference "BottomSheet" */;
+			productName = BottomSheet;
+		};
 		80EDE7AD28CEAAF300F790B6 /* CoreGPX */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 80EDE7AC28CEAAF300F790B6 /* XCRemoteSwiftPackageReference "CoreGPX" */;

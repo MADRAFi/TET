@@ -7,37 +7,41 @@
 import CoreLocationUI
 import MapKit
 import SwiftUI
+import BottomSheet
 
 struct MapView: View {
-//    @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var currentTrack: TrackModel
     @StateObject private var viewModel = MapViewModel()
-
+//    @State var showInfo: Bool = false   /// variable to show or hide InfoPanel for the waypoint
+    @State var bottomSheetPosition: BottomSheetPosition = .hidden
+    @State private var chosenlocation: Waypoint = Waypoint(id: UUID(), time: Date(), elevation: 0.0, coordinates: CLLocationCoordinate2D(latitude: 0.0, longitude: 0.0), name: "", symbol: "", description: "")
     
     var body: some View {
-        
-
-        
         ZStack(alignment: .bottom) {
-//            Map(coordinateRegion: $viewModel.region ,showsUserLocation: true)
             Map(coordinateRegion: $viewModel.region, showsUserLocation: true, annotationItems: currentTrack.waypoints,
                 annotationContent: { location in
-//                var waypoint: CLLocationCoordinate2D = CLLocationCoordinate2D()
-//                    waypoint.latitude = location.latitude
-//                    waypoint.longitude = location.longitude
-
                     MapAnnotation(coordinate: location.coordinates) {
-                        Image(getSymbolIcon(symbol: location.symbol))
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 24, height: 24)
+                        ZStack {
+                            Image(getSymbolIcon(symbol: location.symbol))
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: 24, height: 24)
+                        }
+                        .onTapGesture(count: 1, perform: {
+                            print("IT WORKS")
+                            chosenlocation = location
+                            bottomSheetPosition = .dynamicBottom
+                        })
+                        
+
                         
                     }
-                    
+                
                 }
+
             )
             
-                .ignoresSafeArea()
+//                .ignoresSafeArea()
                 .accentColor(Color("PositionColor"))
 
 //            Button(action: viewModel.startUpdatingLocation) {
@@ -69,42 +73,64 @@ struct MapView: View {
             
 
         }
+        .bottomSheet(
+            bottomSheetPosition: $bottomSheetPosition,
+            switchablePositions: [.dynamic],
+            headerContent: {
+                VStack(alignment: .leading) {
+                    Text(chosenlocation.name.capitalized)
+                        .font(.title)
+                        .bold()
+                    if bottomSheetPosition == .dynamicBottom {
+                            Text("\(chosenlocation.coordinates.longitude)°  \(chosenlocation.coordinates.latitude)° ")
+                                .font(.subheadline)
+                                .foregroundColor(.secondary)
+                    }
+                    
+                    Divider()
+                        .padding(.trailing, -30)
+                }
+                .padding([.top, .leading])
+            },
+            mainContent: { WaypointInfo(location: chosenlocation) }
+            
+        )
+        .onDismiss {
+            bottomSheetPosition = .hidden
+        }
+        .showCloseButton(true)
+        .enableTapToDismiss(true)
+        
         .navigationBarTitleDisplayMode(.inline)
-//        .onAppear {
-//            viewModel.requestLocationPermission()
-//        }
+
     }
     
     func getSymbolIcon(symbol: String) -> String {
         var symbol_icon: String
         
-//        switch symbol {
-//        case "Beach":
-//                symbol_icon = "Beach"
-//        case "Campground":
-//                symbol_icon = "Campground"
-//        case "Flag, Blue":
-//                symbol_icon = "Flag Blue"
-//        case "Gas Station":
-//                symbol_icon = "Gas Station"
-//        case "Information":
-//                symbol_icon = "Information"
-//        case "Lodging":
-//                symbol_icon = "Lodging"
-//        case "Museum":
-//                symbol_icon = "Museum"
-//        case "Restaurant":
-//                symbol_icon = "Restaurant"
-//        case "Scenic Area":
-//                symbol_icon = "Scenic Area"
-//        case "Shoping Center":
-//                symbol_icon = "Shoping Center"
-//        case "Toll Booth":
-//                symbol_icon = "Toll Booth"
-//        default:
-//            symbol_icon = "Flag Red"
-//        }
-        symbol_icon = symbol.replacingOccurrences(of: ",", with: "")
+        switch symbol {
+        case "Airport", "Anchor Prohibited", "Anchor", "Bait and Tackle", "Ball Park", "Block, Red":
+            symbol_icon = "Flag Red"
+        case "Blood Trail", "Bridge", "Car", "Controlled Area", "Danger Area", "Diamond, Red", "Dropoff":
+            symbol_icon = "Flag Red"
+        case "Flag", "Pin, Red":
+            symbol_icon = "Flag Red"
+            
+        case "Beacon", "Bell", "Bike Trail", "Blind", "Block, Blue", "Boat Ramp", "Building", "Buoy, White":
+            symbol_icon = "Flag Blue"
+        case "Car Rental", "Civil", "Coast Guard", "Dam", "Diamond, Blue", "Exit", "Pin, Blue":
+            symbol_icon = "Flag Blue"
+            
+        case "Bowling", "Circle with X", "City Hall", "Cover", "Covey", "Department Store", "Diamond, Green":
+            symbol_icon = "Flag Green"
+        case "Dot, White", "Fishing Area", "Fishing Hot Spot Facility", "Fitness Center", "Food Source":
+            symbol_icon = "Flag Green"
+        case "Pin, Green":
+            symbol_icon = "Flag Green"
+        default:
+            symbol_icon = symbol.replacingOccurrences(of: ",", with: "")
+        }
+//        symbol_icon = symbol.replacingOccurrences(of: ",", with: "")
         return symbol_icon
     }
     
@@ -113,5 +139,6 @@ struct MapView: View {
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
         MapView()
+            .environmentObject(TrackModel(file: "PL.gpx"))
     }
 }
