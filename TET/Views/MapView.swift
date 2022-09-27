@@ -28,9 +28,8 @@ struct MapView: View {
                                 .frame(width: 24, height: 24)
                         }
                         .onTapGesture(count: 1, perform: {
-                            print("IT WORKS")
                             chosenlocation = location
-                            bottomSheetPosition = .dynamicBottom
+                            bottomSheetPosition = .dynamic
                         })
                         
 
@@ -82,11 +81,10 @@ struct MapView: View {
                         .font(.title)
                         .bold()
                     if bottomSheetPosition == .dynamicBottom {
-                            Text("\(chosenlocation.coordinates.longitude)°  \(chosenlocation.coordinates.latitude)° ")
+                            Text("\(chosenlocation.coordinates.latitude)°  \(chosenlocation.coordinates.longitude)°")
                                 .font(.subheadline)
                                 .foregroundColor(.secondary)
                     }
-                    
                     Divider()
                         .padding(.trailing, -30)
                 }
@@ -98,9 +96,11 @@ struct MapView: View {
         .onDismiss {
             bottomSheetPosition = .hidden
         }
-        .showCloseButton(true)
-        .enableTapToDismiss(true)
-        
+        .showCloseButton()
+        .enableBackgroundBlur()
+        .enableTapToDismiss()
+        .isResizable(false)
+
         .navigationBarTitleDisplayMode(.inline)
 
     }

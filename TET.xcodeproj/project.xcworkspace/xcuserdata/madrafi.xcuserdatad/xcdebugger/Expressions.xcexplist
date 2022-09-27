@@ -47,6 +47,14 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "closure #1 in closure #1 in WaypointInfo.body.getter:WaypointInfo.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "location.symbol">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #2 in GPXTrackView.body.getter:GPXTrackView.swift">
          <PersistentStrings>
             <PersistentString

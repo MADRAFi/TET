@@ -19,16 +19,15 @@ struct WaypointInfo: View {
                     .frame(width: 48, height: 48, alignment: .center)
                     .padding()
                 VStack {
-
-                    HStack {
-                        Text("Longitude")
-                        Spacer()
-                        Text("\(location.coordinates.longitude)°")
-                    }
                     HStack {
                         Text("Latitude")
                         Spacer()
                         Text("\(location.coordinates.latitude)°")
+                    }
+                    HStack {
+                        Text("Longitude")
+                        Spacer()
+                        Text("\(location.coordinates.longitude)°")
                     }
                     HStack {
                         Text("Elevation")
@@ -36,20 +35,18 @@ struct WaypointInfo: View {
                         Text("\(Int(location.elevation))m")
                     }
                 }
-                
             }
             HStack {
-                Text(location.description)
+                let markdown = try? AttributedString(markdown: location.description)
+                Text(markdown ?? "unknown")
                     .multilineTextAlignment(.leading)
                     .lineLimit(nil)
                     .fixedSize(horizontal: false, vertical: true)
-                
                 Spacer()
             }
         }
         .padding()
         .padding(.bottom, 30)
-//        Spacer()
     }
 }
 
